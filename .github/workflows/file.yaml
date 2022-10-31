@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - id: my-scan
-        uses: sstephenson-r7/insightappsec-scan-github-actions@1.3.1
+        uses: sstephenson-r7/insightappsec-scan-github-actions@v1.3.1
         with:
           region: us
           api-key: "fakeAPIKey"
