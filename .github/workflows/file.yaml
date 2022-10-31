@@ -10,7 +10,7 @@ jobs:
         uses: sstephenson-r7/insightappsec-scan-github-actions@v1.3.1
         with:
           region: us
-          api-key: "fakeAPIKey"
+          api-key: ${{ secrets.IAS_API_KEY }}
           scan-config-id: "fakeScanID"
           scan-timeout-mins: 1
           vuln-query: "vulnerability.severity = 'HIGH'"
