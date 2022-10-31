@@ -95,9 +95,9 @@ function printErrorMessage(error) {
             messagePrinted = true;
 
             if(error.response.data.status) {
-                core.error(`An error occurred with the scan: ${error}. Status: ` + `${error.response.data.status} ` + `${error.response.data.message}`);
+                core.error(`ERROR 1: An error occurred with the scan: ${error}. Status: ` + `${error.response.data.status} ` + `${error.response.data.message}`);
             } else {
-                core.error(`An error occurred with the scan: ${error}. ` + `${error.response.data.message}`); 
+                core.error(`ERROR 2: An error occurred with the scan: ${error}. ` + `${error.response.data.message}`); 
             }
 
         }
@@ -105,7 +105,7 @@ function printErrorMessage(error) {
     }
 
     if(!messagePrinted){
-        core.error(`An error occurred with the scan: ${error}. `);
+        core.error(`ERROR 3: An error occurred with the scan: ${error}. `);
     }
 
 }
