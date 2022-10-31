@@ -77,7 +77,7 @@ async function performAction() {
         }
     }
     catch(e) {
-        printErrorMessage(e)
+        printErrorMessage(e);
     }
 }
 
